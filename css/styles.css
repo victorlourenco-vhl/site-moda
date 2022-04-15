@@ -11339,8 +11339,7 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   /* background-color: #212529; */
   background-color: #409d9d;
   /* background-image: url('../assets/img/image-navbar.jpeg'); */
@@ -11390,8 +11389,8 @@ p {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     /* background-color: #212529; */
     background-color: #409d9d;
     /* background-image: url('/assets/img/image-navbar.jpeg'); */
