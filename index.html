@@ -8,13 +8,15 @@
         <title>Site de Moda</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome icons (free version) -->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script> 
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- CSS do vídeo -->
+        <link rel="stylesheet" href="css/video.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,12 +41,30 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+
+            <div class="overlay"></div>
+          
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="assets/video/video-site-moda.mp4" type="video/mp4">
+            </video>
+          
+
+            <div class="container h-100">
+              <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <div class="masthead-subheading">Mergulhe nas profundezas do maior evento da cidade!</div>
+                    <div class="masthead-heading text-uppercase">Marília Fashion Shows</div>
+                </div>
+              </div>
+            </div>
+          </header>
+        <!-- <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Mergulhe nas profundezas do maior evento da cidade!</div>
                 <div class="masthead-heading text-uppercase">Marília Fashion Shows</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Me conte mais</a>
             </div>
-        </header>
+        </header> -->
         <!-- Services-->
         
         <!-- Portfolio Grid-->
@@ -278,71 +298,38 @@
                 
             </div>
         </section>
-        <!-- Clients-->
         
-     
         <!-- Contact-->
+        <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Fale Conosco</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <!-- Contact Section Heading-->
+                  <h2 class="page-section-heading text-center text-uppercase mb-0" style="color: white;">Entre em Contato!</h2>
+                 <br><br>
+
+                   <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+
+                        <form target="_blank" action="https://formsubmit.co/..." method="POST">
+                        <div class="form-group">
+                            <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensagem" class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <!-- <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar mensagem</button> -->
+                        <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Enviar</button>
+                        </form>
+                    </div>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Seu Nome *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Seu E-mail *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Seu Telefone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Mensagem *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensagem</button></div>
-                </form>
             </div>
         </section>
         <!-- Footer-->
